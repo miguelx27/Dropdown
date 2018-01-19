@@ -14,7 +14,7 @@
     <div v-else>
         <div v-bind:class="{'itemsList' : collapsed }" >
         <input v-model="search" type="search" class="dropdownSearch" placeholder="Buscar">
-        <div class="dropdownList" v-for="option in filteredList" > <img :src="option.img" > {{option.text}}</div>
+        <div class="dropdownList" v-for="option in filteredList" > <img v-bind:src="option.img" height="15" > {{option.text}}</div>
     </div>
     </div>
 </div>
